@@ -57,7 +57,7 @@ Add to your `pom.xml`:
 #### Option 2: Build from Source
 
 ```bash
-git clone https://github.com/apanimesh061/VaderSentimentJava.git
+git clone  https://github.com/sujalkamble007/OOMD_PROJECT_VADER.git
 cd VaderSentimentJava
 mvn clean package
 ```
