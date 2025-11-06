@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.apanimesh061</groupId>
+    <groupId>com.github.sujalkamble007</groupId>
     <artifactId>vader-sentiment-analyzer</artifactId>
     <version>1.1.1</version>
 
@@ -14,7 +14,7 @@
         is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in
         social media, and works well on texts from other domains.
     </description>
-    <url>https://github.com/apanimesh061/VaderSentimentJava/blob/master/README.md</url>
+    <url>https://github.com/sujalkamble007/OOMD_PROJECT_VADER</url>
     <inceptionYear>2016</inceptionYear>
 
     <licenses>
@@ -37,9 +37,9 @@
     </developers>
 
     <scm>
-        <url>https://github.com/apanimesh061/VaderSentimentJava</url>
-        <connection>scm:git:git://github.com/apanimesh061/VaderSentimentJava.git</connection>
-        <developerConnection>scm:git:git@github.com:apanimesh061/VaderSentimentJava.git</developerConnection>
+        <url>https://github.com/sujalkamble007/OOMD_PROJECT_VADER</url>
+        <connection>scm:git:git://github.com/sujalkamble007/OOMD_PROJECT_VADER.git</connection>
+        <developerConnection>scm:git:git@github.com:sujalkamble007/OOMD_PROJECT_VADER.git</developerConnection>
     </scm>
 
     <parent>
@@ -51,9 +51,9 @@
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <elasticsearch.assembly.descriptor>
+        <assembly.descriptor>
             ${project.basedir}/src/main/assemblies/assembly.xml
-        </elasticsearch.assembly.descriptor>
+        </assembly.descriptor>
         <checkstyle.config.location>
             ${project.basedir}/src/main/checkstyle/checkstyle.xml
         </checkstyle.config.location>
@@ -163,11 +163,11 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <outputDirectory>${project.build.directory}/releases/</outputDirectory>
                     <descriptors>
-                        <descriptor>${elasticsearch.assembly.descriptor}</descriptor>
+                        <descriptor>${assembly.descriptor}</descriptor>
                     </descriptors>
                     <archive>
                         <manifest>
-                            <mainClass>fully.qualified.MainClass</mainClass>
+                            <mainClass>com.vader.sentiment.gui.VaderSentimentGUI</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
